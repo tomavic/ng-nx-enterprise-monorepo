@@ -1,4 +1,4 @@
-import { LayoutInterface } from './layout/store/reducers';
+import { LayoutInterface } from '../layout/store/reducers';
 
 export interface AppStateInterface {
   // Global required State

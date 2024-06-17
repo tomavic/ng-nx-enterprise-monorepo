@@ -1,4 +1,22 @@
 <p>dashboard works!</p>
 
+<h2>Switch Theme</h2>
+
 <button (click)="letThereBeLight()">Light Theme</button>
 <button (click)="letThereBeDark()">Dark Theme</button>
+
+<br />
+
+<hr />
+
+<h2>Translation i18n</h2>
+<button type="button" (click)="changeLanguage('en')">English</button>
+<button type="button" (click)="changeLanguage('de')">Deutsch</button>
+
+<ng-container *transloco="let t">
+  {{ t('helloWorld') }}
+</ng-container>
+
+<!-- <h3>{{ 'helloWorld' | transloco  }}</h3> -->
+
+<br />

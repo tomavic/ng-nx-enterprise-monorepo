@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { filter } from 'rxjs';
-import { AppStateInterface } from '../../app-state.interface';
+import { AppStateInterface } from '../../config/app-state.interface';
 import { setDarkTheme, setLightTheme } from '../store/actions';
 import { selectTheme } from '../store/selectors';
 

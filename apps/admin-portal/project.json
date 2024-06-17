@@ -17,6 +17,7 @@
         "tsConfig": "apps/admin-portal/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
+          "apps/admin-portal/src/assets",
           {
             "glob": "**/*",
             "input": "apps/admin-portal/public"
