@@ -2,7 +2,7 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 
 import { Injectable } from '@angular/core';
 
-import { setDarkTheme, setLightTheme } from './actions';
+import { setAppLanguage, setDarkTheme, setLightTheme } from './actions';
 
 @Injectable()
 export class LayoutEffect {
@@ -13,6 +13,11 @@ export class LayoutEffect {
 
   onSetDarkTheme$ = createEffect(
     () => this.actions$.pipe(ofType(setDarkTheme)),
+    { dispatch: false }
+  );
+
+  onSetAppLanguage$ = createEffect(
+    () => this.actions$.pipe(ofType(setAppLanguage)),
     { dispatch: false }
   );
 

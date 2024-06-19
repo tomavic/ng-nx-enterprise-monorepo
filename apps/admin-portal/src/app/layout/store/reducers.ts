@@ -1,14 +1,17 @@
 import { createReducer, on } from '@ngrx/store';
-import { setDarkTheme, setLightTheme } from './actions';
+import { setAppLanguage, setDarkTheme, setLightTheme } from './actions';
 
 export type DisplayTheme = 'light' | 'dark';
+export type AppLanguage = 'ar' | 'en' | 'de' | 'es';
 
 export type LayoutInterface = {
   theme: DisplayTheme;
+  language: AppLanguage;
 };
 
 export const initialLangState: LayoutInterface = {
   theme: 'dark',
+  language: 'en',
 };
 
 export const LayoutReducers = createReducer<LayoutInterface>(
@@ -21,5 +24,10 @@ export const LayoutReducers = createReducer<LayoutInterface>(
   on(setDarkTheme, (state) => ({
     ...state,
     theme: 'dark',
+  })),
+
+  on(setAppLanguage, (state, action) => ({
+    ...state,
+    language: action.language,
   }))
 );

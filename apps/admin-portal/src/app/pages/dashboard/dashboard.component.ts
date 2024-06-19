@@ -1,11 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import {
-  TranslocoDirective,
-  TranslocoPipe,
-  TranslocoService,
-} from '@jsverse/transloco';
+import { TranslocoDirective, TranslocoPipe } from '@jsverse/transloco';
 import { LayoutFacadeService } from '../../layout/facade/layout.facade.service';
+import { AppLanguage } from '../../layout/store/reducers';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,7 +13,6 @@ import { LayoutFacadeService } from '../../layout/facade/layout.facade.service';
 })
 export class DashboardComponent {
   layoutFacade = inject(LayoutFacadeService);
-  translocoService = inject(TranslocoService);
 
   letThereBeDark() {
     this.layoutFacade.setDarkTheme();
@@ -27,6 +23,6 @@ export class DashboardComponent {
   }
 
   changeLanguage(lang: string): void {
-    this.translocoService.setActiveLang(lang);
+    this.layoutFacade.setLanguage(lang as AppLanguage);
   }
 }

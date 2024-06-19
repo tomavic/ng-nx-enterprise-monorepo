@@ -1,8 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
+import { TranslocoService } from '@jsverse/transloco';
 import { Store, select } from '@ngrx/store';
 import { filter } from 'rxjs';
 import { AppStateInterface } from '../../config/app-state.interface';
-import { setDarkTheme, setLightTheme } from '../store/actions';
+import { setAppLanguage, setDarkTheme, setLightTheme } from '../store/actions';
+import { AppLanguage } from '../store/reducers';
 import { selectTheme } from '../store/selectors';
 
 @Injectable({ providedIn: 'root' })
@@ -14,6 +16,8 @@ export class LayoutFacadeService {
     .pipe(select(selectTheme))
     .pipe(filter((v) => v === 'dark'));
 
+  translocoService = inject(TranslocoService);
+
   constructor(private store: Store<AppStateInterface>) {}
 
   setLightTheme() {
@@ -22,5 +26,11 @@ export class LayoutFacadeService {
 
   setDarkTheme() {
     this.store.dispatch(setDarkTheme());
+  }
+
+  setLanguage(language: AppLanguage) {
+    this.translocoService.setActiveLang(language);
+
+    this.store.dispatch(setAppLanguage({ language }));
   }
 }
