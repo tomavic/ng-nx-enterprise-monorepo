@@ -10,8 +10,16 @@
 <hr />
 
 <h2>Translation i18n</h2>
-<button type="button" (click)="changeLanguage('en')">English</button>
-<button type="button" (click)="changeLanguage('de')">Deutsch</button>
+<button
+  type="button"
+  (click)="changeLanguage('en')"
+  >English</button
+>
+<button
+  type="button"
+  (click)="changeLanguage('de')"
+  >Deutsch</button
+>
 
 <ng-container *transloco="let t">
   {{ t('helloWorld') }}

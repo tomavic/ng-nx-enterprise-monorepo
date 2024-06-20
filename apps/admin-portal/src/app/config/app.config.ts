@@ -1,15 +1,8 @@
 import { provideHttpClient } from '@angular/common/http';
-import {
-  ApplicationConfig,
-  isDevMode,
-  provideZoneChangeDetection,
-} from '@angular/core';
+import { ApplicationConfig, isDevMode, provideZoneChangeDetection } from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
-import {
-  PreloadAllModules,
-  provideRouter,
-  withPreloading,
-} from '@angular/router';
+import { PreloadAllModules, provideRouter, withPreloading } from '@angular/router';
+
 import { provideTransloco } from '@jsverse/transloco';
 import { provideEffects } from '@ngrx/effects';
 import { provideStore } from '@ngrx/store';
@@ -30,9 +23,9 @@ export const AppConfig: ApplicationConfig = {
         defaultLang: 'en',
         // Remove this option if your application doesn't support changing language in runtime.
         reRenderOnLangChange: true,
-        prodMode: !isDevMode(),
+        prodMode: !isDevMode()
       },
-      loader: TranslocoHttpLoader,
+      loader: TranslocoHttpLoader
     }),
 
     // ! ORDER MATTER
@@ -44,6 +37,6 @@ export const AppConfig: ApplicationConfig = {
     provideClientHydration(),
 
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(appRoutes, withPreloading(PreloadAllModules)),
-  ],
+    provideRouter(appRoutes, withPreloading(PreloadAllModules))
+  ]
 };

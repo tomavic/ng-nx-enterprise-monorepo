@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+
 import { LoginComponent } from './containers/login-page/Login.component';
 import { NotFound4O4Component } from './containers/not-found-page/NotFound4O4.component';
 import { HomeGuard } from './guards/home.guard';
@@ -9,15 +10,12 @@ export const appRoutes: Route[] = [
   {
     path: 'login',
     canActivate: [LoginGuard],
-    component: LoginComponent,
+    component: LoginComponent
   },
   {
     path: 'home',
     canActivate: [HomeGuard],
-    loadComponent: () =>
-      import('./pages/dashboard/dashboard.component').then(
-        (m) => m.DashboardComponent
-      ),
+    loadComponent: () => import('./pages/dashboard/dashboard.component').then(m => m.DashboardComponent)
   },
   // Option 1: Lazy Loading another Routing Config
   // {
@@ -37,5 +35,5 @@ export const appRoutes: Route[] = [
   //     ),
   // },
   { path: 'not-found-404', component: NotFound4O4Component },
-  { path: '**', redirectTo: 'not-found-404' },
+  { path: '**', redirectTo: 'not-found-404' }
 ];

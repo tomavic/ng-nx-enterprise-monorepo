@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
+
 import { TranslocoDirective, TranslocoPipe } from '@jsverse/transloco';
+
 import { LayoutFacadeService } from '../../layout/facade/layout.facade.service';
 import { AppLanguage } from '../../layout/store/reducers';
 
@@ -9,7 +11,7 @@ import { AppLanguage } from '../../layout/store/reducers';
   standalone: true,
   imports: [CommonModule, TranslocoDirective, TranslocoPipe],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss',
+  styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
   layoutFacade = inject(LayoutFacadeService);
