@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "is-ci || husky install",
+    "start": "nx run admin-portal:serve:development",
     "format": "prettier --write \"**/*.{ts,js,scss,css,html,md,json,yml}\"",
     "cm": "git cz",
     "clean:repo": "git clean -fd",
