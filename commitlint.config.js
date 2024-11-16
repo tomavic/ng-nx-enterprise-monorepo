@@ -24,8 +24,8 @@ module.exports = {
     types: [
       {
         value: 'feat',
-        name: 'feat:     ✨  A new feature',
-        emoji: '✨'
+        name: 'feat:     🎉  A new feature',
+        emoji: '🎉'
       },
       {
         value: 'fix',
@@ -44,13 +44,13 @@ module.exports = {
       },
       {
         value: 'refactor',
-        name: 'refactor: ♻️   A code change that neither fixes a bug nor adds a feature',
-        emoji: '♻️'
+        name: 'refactor: 💡  A code change that neither fixes a bug nor adds a feature',
+        emoji: '💡'
       },
       {
         value: 'perf',
-        name: 'perf:     ⚡️  A code change that improves performance',
-        emoji: '⚡️'
+        name: 'perf:     ✨  A code change that improves performance',
+        emoji: '✨'
       },
       {
         value: 'test',
@@ -61,6 +61,11 @@ module.exports = {
         value: 'build',
         name: 'build:    📦️   Changes that affect the build system or external dependencies',
         emoji: '📦️'
+      },
+      {
+        value: 'release',
+        name: 'release:  🏹   Changes that subjects to creating a new release',
+        emoji: '🏹'
       },
       {
         value: 'ci',
