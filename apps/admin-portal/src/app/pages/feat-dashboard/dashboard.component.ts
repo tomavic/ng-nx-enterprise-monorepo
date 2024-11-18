@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 
 import { TranslocoDirective, TranslocoPipe } from '@jsverse/transloco';
-
 import { LayoutFacadeService } from '../../layout/facade/layout.facade.service';
 import { AppLanguage } from '../../layout/store/reducers';
 

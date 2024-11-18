@@ -8,10 +8,10 @@ import { provideEffects } from '@ngrx/effects';
 import { provideStore } from '@ngrx/store';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 
-import { appRoutes } from '../app.routes';
-import { AppEffects } from './app.effects';
-import { AppReducers } from './app.reducers';
-import { ReduxDevToolConfig } from './dev-tool.config';
+import { appRoutes } from './app.routes';
+import { AppEffects } from './store/app.effects';
+import { AppReducers } from './store/app.reducers';
+import { ReduxDevToolConfig } from './store/dev-tool.config';
 import { TranslocoHttpLoader } from './transloco.config';
 
 export const AppConfig: ApplicationConfig = {

@@ -1,6 +1,6 @@
 import { createSelector } from '@ngrx/store';
 
-import { AppStateInterface } from '../../config/app-state.interface';
+import { AppStateInterface } from '../../store/app-state.interface';
 
 const selectLayoutFeature = (state: AppStateInterface) => state.layout;
 

@@ -1,10 +1,10 @@
 import { Route } from '@angular/router';
 
-import { HomeComponent } from './containers/home-page/Home.component';
-import { LoginComponent } from './containers/login-page/Login.component';
-import { NotFound4O4Component } from './containers/not-found-page/NotFound4O4.component';
-import { HomeGuard } from './guards/home.guard';
-import { LoginGuard } from './guards/login.guard';
+import { HomeComponent } from './layout/containers/home/Home.component';
+import { LoginComponent } from './layout/containers/login/Login.component';
+import { NotFound4O4Component } from './layout/containers/not-found/NotFound4O4.component';
+import { HomeGuard } from './layout/guards/home.guard';
+import { LoginGuard } from './layout/guards/login.guard';
 
 export const appRoutes: Route[] = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,7 +24,7 @@ export const appRoutes: Route[] = [
     children: [
       {
         path: '',
-        loadComponent: () => import('./pages/dashboard/dashboard.component').then(m => m.DashboardComponent)
+        loadComponent: () => import('./pages/feat-dashboard/dashboard.component').then(m => m.DashboardComponent)
       }
 
       // Option 1: Lazy Loading another Routing Config

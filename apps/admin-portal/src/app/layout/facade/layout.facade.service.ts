@@ -5,7 +5,7 @@ import { filter } from 'rxjs';
 import { TranslocoService } from '@jsverse/transloco';
 import { Store, select } from '@ngrx/store';
 
-import { AppStateInterface } from '../../config/app-state.interface';
+import { AppStateInterface } from '../../store/app-state.interface';
 import { setAppLanguage, setDarkTheme, setLightTheme } from '../store/actions';
 import { AppLanguage } from '../store/reducers';
 import { selectTheme } from '../store/selectors';
