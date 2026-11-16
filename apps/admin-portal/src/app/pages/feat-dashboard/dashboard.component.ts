@@ -1,27 +1,14 @@
 import { Component, inject } from '@angular/core';
 
-import { TranslocoDirective, TranslocoPipe } from '@jsverse/transloco';
-import { LayoutFacadeService } from '../../layout/facade/layout.facade.service';
-import { AppLanguage } from '../../layout/store/reducers';
+import { TranslocoDirective } from '@jsverse/transloco';
+
+import { LayoutStore } from '../../layout/state/layout.store';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [TranslocoDirective, TranslocoPipe],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+  imports: [TranslocoDirective],
+  templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent {
-  layoutFacade = inject(LayoutFacadeService);
-
-  letThereBeDark() {
-    this.layoutFacade.setDarkTheme();
-  }
-
-  letThereBeLight() {
-    this.layoutFacade.setLightTheme();
-  }
-
-  changeLanguage(lang: string): void {
-    this.layoutFacade.setLanguage(lang as AppLanguage);
-  }
+  protected readonly layout = inject(LayoutStore);
 }

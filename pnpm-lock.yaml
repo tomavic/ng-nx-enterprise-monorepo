@@ -40,24 +40,9 @@ importers:
       "@jsverse/transloco":
         specifier: ^7.4.2
         version: 7.5.0(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(typescript@6.0.3)
-      "@ngrx/component-store":
-        specifier: 22.0.1
-        version: 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
-      "@ngrx/effects":
-        specifier: 22.0.1
-        version: 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)
-      "@ngrx/entity":
-        specifier: 22.0.1
-        version: 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)
-      "@ngrx/router-store":
-        specifier: 22.0.1
-        version: 22.0.1(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/router@22.1.8(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(rxjs@7.8.1))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)
-      "@ngrx/store":
-        specifier: 22.0.1
-        version: 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
       "@nx/angular":
         specifier: 24.0.6
-        version: 24.0.6(03519d10f3ad516583766dbd44c0f857)
+        version: 24.0.6(ded602165383ccdbaad7584d86bb3ac2)
       express:
         specifier: ~4.18.2
         version: 4.18.3
@@ -116,30 +101,24 @@ importers:
       "@eslint/js":
         specifier: ^9.8.0
         version: 9.9.1
-      "@ngrx/schematics":
-        specifier: 22.0.1
-        version: 22.0.1
-      "@ngrx/store-devtools":
-        specifier: 22.0.1
-        version: 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)
       "@nx/devkit":
         specifier: 24.0.6
         version: 24.0.6(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
       "@nx/eslint":
         specifier: 24.0.6
-        version: 24.0.6(50067d5f6193893fe27d6a0a187ef448)
+        version: 24.0.6(e9021e8a46f0c03067574509fdff5c1a)
       "@nx/eslint-plugin":
         specifier: 24.0.6
         version: 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@typescript-eslint/parser@8.72.2(eslint@9.9.1(jiti@2.7.0))(typescript@6.0.3))(eslint-config-prettier@10.1.8(eslint@9.9.1(jiti@2.7.0)))(eslint@9.9.1(jiti@2.7.0))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(typescript@6.0.3)
       "@nx/jest":
         specifier: 24.0.6
-        version: 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(ts-jest@29.4.9(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3))(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))(typescript@6.0.3)
+        version: 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(ts-jest@29.4.9(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3))(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))(typescript@6.0.3)
       "@nx/js":
         specifier: 24.0.6
         version: 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
       "@nx/playwright":
         specifier: 24.0.6
-        version: 24.0.6(fcef31612efe9d5b7ca07f4aab1df8d3)
+        version: 24.0.6(acbf74cdd61f4cf9c2982f4233585f41)
       "@nx/workspace":
         specifier: 24.0.6
         version: 24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))
@@ -217,7 +196,7 @@ importers:
         version: 30.5.2
       jest-preset-angular:
         specifier: 17.0.3
-        version: 17.0.3(@angular/compiler-cli@22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(@types/jsdom@21.1.7)(babel-jest@30.5.2(@babel/core@8.0.1))(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(jsdom@26.1.0)(typescript@6.0.3)
+        version: 17.0.3(@angular/compiler-cli@22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(@types/jsdom@21.1.7)(babel-jest@30.5.2(@babel/core@7.29.13))(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(jsdom@26.1.0)(typescript@6.0.3)
       lint-staged:
         specifier: ^15.2.7
         version: 15.2.10
@@ -235,7 +214,7 @@ importers:
         version: 3.4.15(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))
       ts-jest:
         specifier: 29.4.9
-        version: 29.4.9(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3)
+        version: 29.4.9(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3)
       ts-node:
         specifier: 10.9.1
         version: 10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)
@@ -3166,58 +3145,6 @@ packages:
     peerDependencies:
       "@emnapi/core": ^1.7.1 || 2.0.0-beta.2 || 2.0.0-beta.3
       "@emnapi/runtime": ^1.7.1 || 2.0.0-beta.2 || 2.0.0-beta.3
-
-  "@ngrx/component-store@22.0.1":
-    resolution:
-      { integrity: sha512-DPtu8FCbIUYNJ2AED4xMFOB0vKibU+6p/cDgp13LSt8hau72tC7wmTfe5cGe7LH1DSyFE2ngR/n1+gTiUj0Puw== }
-    peerDependencies:
-      "@angular/core": ^22.0.0
-      rxjs: ^6.5.3 || ^7.5.0
-
-  "@ngrx/effects@22.0.1":
-    resolution:
-      { integrity: sha512-SRI6Q04rJfrf/qUwphzoJU8IJsPAPzP0MmmXK5qbMUuZ24V1JbAyI5+c0bEVzIFMMOooAU7wkO6iuJg5TVjmsw== }
-    peerDependencies:
-      "@angular/core": ^22.0.0
-      "@ngrx/store": 22.0.1
-      rxjs: ^6.5.3 || ^7.5.0
-
-  "@ngrx/entity@22.0.1":
-    resolution:
-      { integrity: sha512-oag8ziTUA2tBOZWI5quhWImCWXIaRjAHdj4rsoAe8fNiFdIa9k+fvpSk8dQXDlXZARRvN8jLRA5O26frx1qJJg== }
-    peerDependencies:
-      "@angular/core": ^22.0.0
-      "@ngrx/store": 22.0.1
-      rxjs: ^6.5.3 || ^7.5.0
-
-  "@ngrx/router-store@22.0.1":
-    resolution:
-      { integrity: sha512-g7F8bGXhe1THdNdUC4xySObd3q2Rkfu0lkrlR4s8/nm0nDsJoqY/q9Jm/m438QXVyiRC1dV42W0v6Gg37eaFRw== }
-    peerDependencies:
-      "@angular/common": ^22.0.0
-      "@angular/core": ^22.0.0
-      "@angular/router": ^22.0.0
-      "@ngrx/store": 22.0.1
-      rxjs: ^6.5.3 || ^7.5.0
-
-  "@ngrx/schematics@22.0.1":
-    resolution:
-      { integrity: sha512-MYMEOUokrBWYDhvsAsc+cFtaTQvXBIy2QQs4215JQTO9gnZKiVUOcNy03uZst15F64p1a3QjRYKpwJfI7vOuhA== }
-
-  "@ngrx/store-devtools@22.0.1":
-    resolution:
-      { integrity: sha512-mnsz+k0+07dUvThTehbKvlV8lyVWRRy6GTQuo30EW+40PSBvUkdcqhb8u63K2zIdV43SjsZOWEjDSjMJJSCCmg== }
-    peerDependencies:
-      "@angular/core": ^22.0.0
-      "@ngrx/store": 22.0.1
-      rxjs: ^6.5.3 || ^7.5.0
-
-  "@ngrx/store@22.0.1":
-    resolution:
-      { integrity: sha512-CWCqqG+qepatkH9HE4+a17x/uyU/sTDO75IQWEntJi0xGTeE++iZH/QUm4MWB7mmb43Y+PnwydI3515DzfINtg== }
-    peerDependencies:
-      "@angular/core": ^22.0.0
-      rxjs: ^6.5.3 || ^7.5.0
 
   "@ngtools/webpack@22.1.9":
     resolution:
@@ -11269,44 +11196,20 @@ snapshots:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-async-generators@7.8.4(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-bigint@7.8.3(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-class-properties@7.12.13(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-decorators@7.25.9(@babel/core@7.29.13)":
     dependencies:
@@ -11323,33 +11226,15 @@ snapshots:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-import-attributes@7.29.7(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-import-meta@7.10.4(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-json-strings@7.8.3(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.13)":
     dependencies:
@@ -11361,88 +11246,40 @@ snapshots:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-logical-assignment-operators@7.10.4(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
 
-  "@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
-
   "@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.29.13)":
     dependencies:
       "@babel/core": 7.29.13
       "@babel/helper-plugin-utils": 7.29.7
-
-  "@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@8.0.1)":
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/helper-plugin-utils": 7.29.7
-    optional: true
 
   "@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.13)":
     dependencies:
@@ -13464,50 +13301,6 @@ snapshots:
       "@tybys/wasm-util": 0.10.5
     optional: true
 
-  "@ngrx/component-store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)":
-    dependencies:
-      "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
-      rxjs: 7.8.1
-      tslib: 2.8.1
-
-  "@ngrx/effects@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)":
-    dependencies:
-      "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
-      "@ngrx/store": 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
-      rxjs: 7.8.1
-      tslib: 2.8.1
-
-  "@ngrx/entity@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)":
-    dependencies:
-      "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
-      "@ngrx/store": 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
-      rxjs: 7.8.1
-      tslib: 2.8.1
-
-  "@ngrx/router-store@22.0.1(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/router@22.1.8(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(rxjs@7.8.1))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)":
-    dependencies:
-      "@angular/common": 22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
-      "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
-      "@angular/router": 22.1.8(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(rxjs@7.8.1)
-      "@ngrx/store": 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
-      rxjs: 7.8.1
-      tslib: 2.8.1
-
-  "@ngrx/schematics@22.0.1": {}
-
-  "@ngrx/store-devtools@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(rxjs@7.8.1)":
-    dependencies:
-      "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
-      "@ngrx/store": 22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)
-      rxjs: 7.8.1
-      tslib: 2.8.1
-
-  "@ngrx/store@22.0.1(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1)":
-    dependencies:
-      "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
-      rxjs: 7.8.1
-      tslib: 2.8.1
-
   "@ngtools/webpack@22.1.9(@angular/compiler-cli@22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3))(typescript@6.0.3)(webpack@5.109.2(@swc/core@1.16.22(@swc/helpers@0.5.24))(esbuild@0.28.2)(postcss@8.5.25))":
     dependencies:
       "@angular/compiler-cli": 22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3)
@@ -13583,12 +13376,12 @@ snapshots:
       "@nodelib/fs.scandir": 2.1.5
       fastq: 1.17.1
 
-  "@nx/angular@24.0.6(03519d10f3ad516583766dbd44c0f857)":
+  "@nx/angular@24.0.6(ded602165383ccdbaad7584d86bb3ac2)":
     dependencies:
       "@angular-devkit/core": 22.1.9(chokidar@5.0.0)
       "@angular-devkit/schematics": 22.1.9(chokidar@5.0.0)
       "@nx/devkit": 24.0.6(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
-      "@nx/eslint": 24.0.6(50067d5f6193893fe27d6a0a187ef448)
+      "@nx/eslint": 24.0.6(e9021e8a46f0c03067574509fdff5c1a)
       "@nx/js": 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
       "@phenomnomnominal/tsquery": 6.2.0(typescript@6.0.3)
       "@schematics/angular": 22.1.9(chokidar@5.0.0)
@@ -13603,7 +13396,7 @@ snapshots:
     optionalDependencies:
       "@angular-devkit/build-angular": 22.1.9(0362768143d51a4ac672039599853914)
       "@angular/build": 22.1.9(8e2fec078da21496d303ca2aabc7f7a0)
-      "@nx/playwright": 24.0.6(fcef31612efe9d5b7ca07f4aab1df8d3)
+      "@nx/playwright": 24.0.6(acbf74cdd61f4cf9c2982f4233585f41)
       webpack-merge: 5.10.0
     transitivePeerDependencies:
       - "@babel/traverse"
@@ -13654,7 +13447,7 @@ snapshots:
       - typescript
       - verdaccio
 
-  "@nx/eslint@24.0.6(50067d5f6193893fe27d6a0a187ef448)":
+  "@nx/eslint@24.0.6(e9021e8a46f0c03067574509fdff5c1a)":
     dependencies:
       "@nx/devkit": 24.0.6(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
       "@nx/js": 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
@@ -13663,7 +13456,7 @@ snapshots:
       tslib: 2.8.1
       typescript: 6.0.3
     optionalDependencies:
-      "@nx/jest": 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(ts-jest@29.4.9(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3))(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))(typescript@6.0.3)
+      "@nx/jest": 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(ts-jest@29.4.9(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3))(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))(typescript@6.0.3)
       "@zkochan/js-yaml": 0.0.7
     transitivePeerDependencies:
       - "@babel/traverse"
@@ -13674,7 +13467,7 @@ snapshots:
       - supports-color
       - verdaccio
 
-  "@nx/jest@24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(ts-jest@29.4.9(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3))(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))(typescript@6.0.3)":
+  "@nx/jest@24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))(ts-jest@29.4.9(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3))(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))(typescript@6.0.3)":
     dependencies:
       "@nx/devkit": 24.0.6(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
       "@nx/js": 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
@@ -13691,7 +13484,7 @@ snapshots:
       yargs-parser: 21.1.1
     optionalDependencies:
       jest: 30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3))
-      ts-jest: 29.4.9(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3)
+      ts-jest: 29.4.9(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3)
     transitivePeerDependencies:
       - "@babel/traverse"
       - "@swc-node/register"
@@ -13774,10 +13567,10 @@ snapshots:
   "@nx/nx-win32-x64-msvc@24.0.6":
     optional: true
 
-  "@nx/playwright@24.0.6(fcef31612efe9d5b7ca07f4aab1df8d3)":
+  "@nx/playwright@24.0.6(acbf74cdd61f4cf9c2982f4233585f41)":
     dependencies:
       "@nx/devkit": 24.0.6(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
-      "@nx/eslint": 24.0.6(50067d5f6193893fe27d6a0a187ef448)
+      "@nx/eslint": 24.0.6(e9021e8a46f0c03067574509fdff5c1a)
       "@nx/js": 24.0.6(@babel/traverse@7.29.14)(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24))(nx@24.0.6(@swc-node/register@1.12.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@swc/types@0.1.28)(typescript@6.0.3))(@swc/core@1.16.22(@swc/helpers@0.5.24)))
       https-proxy-agent: 7.0.6
       minimatch: 10.2.5
@@ -15075,20 +14868,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-jest@30.5.2(@babel/core@8.0.1):
-    dependencies:
-      "@babel/core": 8.0.1
-      "@jest/transform": 30.5.2
-      "@types/babel__core": 7.20.5
-      babel-plugin-istanbul: 8.0.0
-      babel-preset-jest: 30.5.0(@babel/core@8.0.1)
-      chalk: 4.1.2
-      graceful-fs: 4.2.11
-      slash: 3.0.0
-    transitivePeerDependencies:
-      - supports-color
-    optional: true
-
   babel-loader@10.1.1(@babel/core@8.0.1)(@rspack/core@1.6.8(@swc/helpers@0.5.24))(webpack@5.109.2(@swc/core@1.16.22(@swc/helpers@0.5.24))(esbuild@0.28.2)(postcss@8.5.25)):
     dependencies:
       "@babel/core": 8.0.1
@@ -15190,38 +14969,11 @@ snapshots:
       "@babel/plugin-syntax-private-property-in-object": 7.14.5(@babel/core@7.29.13)
       "@babel/plugin-syntax-top-level-await": 7.14.5(@babel/core@7.29.13)
 
-  babel-preset-current-node-syntax@1.2.0(@babel/core@8.0.1):
-    dependencies:
-      "@babel/core": 8.0.1
-      "@babel/plugin-syntax-async-generators": 7.8.4(@babel/core@8.0.1)
-      "@babel/plugin-syntax-bigint": 7.8.3(@babel/core@8.0.1)
-      "@babel/plugin-syntax-class-properties": 7.12.13(@babel/core@8.0.1)
-      "@babel/plugin-syntax-class-static-block": 7.14.5(@babel/core@8.0.1)
-      "@babel/plugin-syntax-import-attributes": 7.29.7(@babel/core@8.0.1)
-      "@babel/plugin-syntax-import-meta": 7.10.4(@babel/core@8.0.1)
-      "@babel/plugin-syntax-json-strings": 7.8.3(@babel/core@8.0.1)
-      "@babel/plugin-syntax-logical-assignment-operators": 7.10.4(@babel/core@8.0.1)
-      "@babel/plugin-syntax-nullish-coalescing-operator": 7.8.3(@babel/core@8.0.1)
-      "@babel/plugin-syntax-numeric-separator": 7.10.4(@babel/core@8.0.1)
-      "@babel/plugin-syntax-object-rest-spread": 7.8.3(@babel/core@8.0.1)
-      "@babel/plugin-syntax-optional-catch-binding": 7.8.3(@babel/core@8.0.1)
-      "@babel/plugin-syntax-optional-chaining": 7.8.3(@babel/core@8.0.1)
-      "@babel/plugin-syntax-private-property-in-object": 7.14.5(@babel/core@8.0.1)
-      "@babel/plugin-syntax-top-level-await": 7.14.5(@babel/core@8.0.1)
-    optional: true
-
   babel-preset-jest@30.5.0(@babel/core@7.29.13):
     dependencies:
       "@babel/core": 7.29.13
       babel-plugin-jest-hoist: 30.5.0
       babel-preset-current-node-syntax: 1.2.0(@babel/core@7.29.13)
-
-  babel-preset-jest@30.5.0(@babel/core@8.0.1):
-    dependencies:
-      "@babel/core": 8.0.1
-      babel-plugin-jest-hoist: 30.5.0
-      babel-preset-current-node-syntax: 1.2.0(@babel/core@8.0.1)
-    optional: true
 
   balanced-match@1.0.2: {}
 
@@ -17098,7 +16850,7 @@ snapshots:
       "@types/node": 18.16.9
       jest-util: 30.5.1
 
-  jest-preset-angular@17.0.3(@angular/compiler-cli@22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(@types/jsdom@21.1.7)(babel-jest@30.5.2(@babel/core@8.0.1))(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(jsdom@26.1.0)(typescript@6.0.3):
+  jest-preset-angular@17.0.3(@angular/compiler-cli@22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(@angular/platform-browser@22.1.8(@angular/animations@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@angular/common@22.1.8(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3))(rxjs@7.8.1))(@angular/core@22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)))(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(@types/jsdom@21.1.7)(babel-jest@30.5.2(@babel/core@7.29.13))(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(jsdom@26.1.0)(typescript@6.0.3):
     dependencies:
       "@angular/compiler-cli": 22.1.8(@angular/compiler@22.1.8)(typescript@6.0.3)
       "@angular/core": 22.1.8(@angular/compiler@22.1.8)(rxjs@7.8.1)(zone.js@0.16.3)
@@ -17110,7 +16862,7 @@ snapshots:
       jest-util: 30.5.1
       jsdom: 26.1.0
       pretty-format: 30.5.1
-      ts-jest: 29.4.15(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3)
+      ts-jest: 29.4.15(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3)
       typescript: 6.0.3
     optionalDependencies:
       esbuild: 0.28.2
@@ -19259,7 +19011,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-jest@29.4.15(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3):
+  ts-jest@29.4.15(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
@@ -19273,14 +19025,14 @@ snapshots:
       typescript: 6.0.3
       yargs-parser: 21.1.1
     optionalDependencies:
-      "@babel/core": 8.0.1
+      "@babel/core": 7.29.13
       "@jest/transform": 30.5.2
       "@jest/types": 30.5.1
-      babel-jest: 30.5.2(@babel/core@8.0.1)
+      babel-jest: 30.5.2(@babel/core@7.29.13)
       esbuild: 0.28.2
       jest-util: 30.5.1
 
-  ts-jest@29.4.9(@babel/core@8.0.1)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@8.0.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3):
+  ts-jest@29.4.9(@babel/core@7.29.13)(@jest/transform@30.5.2)(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@18.16.9)(babel-plugin-macros@3.1.0)(ts-node@10.9.1(@swc/core@1.16.22(@swc/helpers@0.5.24))(@types/node@18.16.9)(typescript@6.0.3)))(typescript@6.0.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
@@ -19294,10 +19046,10 @@ snapshots:
       typescript: 6.0.3
       yargs-parser: 21.1.1
     optionalDependencies:
-      "@babel/core": 8.0.1
+      "@babel/core": 7.29.13
       "@jest/transform": 30.5.2
       "@jest/types": 30.5.1
-      babel-jest: 30.5.2(@babel/core@8.0.1)
+      babel-jest: 30.5.2(@babel/core@7.29.13)
       esbuild: 0.28.2
       jest-util: 30.5.1
 

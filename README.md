@@ -4,21 +4,22 @@ An Angular admin portal in an Nx workspace, built up in small lessons: auth guar
 tooling, Docker. Each lesson is a tagged point in the history, so you can open the code as it stood after that lesson or
 see exactly what the lesson changed.
 
-**Now on Angular 22, Nx 24, NgRx 22 and TypeScript 6.** Lessons 01–07 were written on Angular 18; lesson 08 is the
-upgrade.
+**Now on Angular 22, Nx 24 and TypeScript 6, with no state library.** Lessons 01–07 were written on Angular 18, lesson
+08 is the upgrade, and lesson 09 removes NgRx in favour of signals.
 
 ## Lessons
 
-| #   | Lesson                                                | Code at this point                                                                                     | What changed                                                                                                                                 |
-| --- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01  | Auth module: login and home layouts, guard stubs      | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-01-auth-module)              | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/b67e256...lesson-01-auth-module)                                         |
-| 02  | NgRx store, effects and router store                  | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-02-setup-ngrx)               | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-01-auth-module...lesson-02-setup-ngrx)                            |
-| 03  | Translations with Transloco, language in the store    | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-03-setup-i18n)               | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-02-setup-ngrx...lesson-03-setup-i18n)                             |
-| 04  | Tailwind CSS with a dark and light theme              | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-04-setup-ui)                 | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-03-setup-i18n...lesson-04-setup-ui)                               |
-| 05  | Husky, commitlint and lint-staged                     | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-05-chores-and-build-tools)   | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-04-setup-ui...lesson-05-chores-and-build-tools)                   |
-| 06  | Folder structure, assets moved to `public/`           | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-06-chores-and-minor-updates) | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-05-chores-and-build-tools...lesson-06-chores-and-minor-updates)   |
-| 07  | Docker image served by nginx                          | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-07-deploy-with-docker-ngnix) | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-06-chores-and-minor-updates...lesson-07-deploy-with-docker-ngnix) |
-| 08  | Upgrade from Angular 18 / Nx 19 to Angular 22 / Nx 24 | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-08-upgrade-to-angular-22)    | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-07-deploy-with-docker-ngnix...lesson-08-upgrade-to-angular-22)    |
+| #   | Lesson                                                  | Code at this point                                                                                     | What changed                                                                                                                                 |
+| --- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | Auth module: login and home layouts, guard stubs        | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-01-auth-module)              | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/b67e256...lesson-01-auth-module)                                         |
+| 02  | NgRx store, effects and router store                    | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-02-setup-ngrx)               | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-01-auth-module...lesson-02-setup-ngrx)                            |
+| 03  | Translations with Transloco, language in the store      | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-03-setup-i18n)               | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-02-setup-ngrx...lesson-03-setup-i18n)                             |
+| 04  | Tailwind CSS with a dark and light theme                | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-04-setup-ui)                 | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-03-setup-i18n...lesson-04-setup-ui)                               |
+| 05  | Husky, commitlint and lint-staged                       | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-05-chores-and-build-tools)   | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-04-setup-ui...lesson-05-chores-and-build-tools)                   |
+| 06  | Folder structure, assets moved to `public/`             | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-06-chores-and-minor-updates) | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-05-chores-and-build-tools...lesson-06-chores-and-minor-updates)   |
+| 07  | Docker image served by nginx                            | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-07-deploy-with-docker-ngnix) | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-06-chores-and-minor-updates...lesson-07-deploy-with-docker-ngnix) |
+| 08  | Upgrade from Angular 18 / Nx 19 to Angular 22 / Nx 24   | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-08-upgrade-to-angular-22)    | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-07-deploy-with-docker-ngnix...lesson-08-upgrade-to-angular-22)    |
+| 09  | Remove NgRx: theme and language in a signal-based store | [browse](https://github.com/tomavic/ng-nx-enterprise-monorepo/tree/lesson-09-remove-ngrx)              | [diff](https://github.com/tomavic/ng-nx-enterprise-monorepo/compare/lesson-08-upgrade-to-angular-22...lesson-09-remove-ngrx)                 |
 
 To work from a lesson locally: `git checkout lesson-03-setup-i18n`.
 
@@ -36,14 +37,29 @@ step):
   time).
 - The Docker image fixed and rebuilt on Node 22 and pnpm, serving the prerendered pages.
 
+### What lesson 09 shows
+
+NgRx was carrying two values: the colour theme and the language. That took seven packages, actions, a reducer,
+selectors, three effects that did nothing, and router selectors nobody read. Lesson 09 replaces all of it with one
+`LayoutStore` of Angular signals ([`layout.store.ts`](apps/admin-portal/src/app/layout/state/layout.store.ts)) and drops
+every `@ngrx/*` package:
+
+- `theme` and `language` are signals; components read them directly, with no selectors or `async` pipe.
+- An `effect()` applies the theme to the page (the `dark` class for Tailwind's `darkMode: 'class'`) and sets `lang` on
+  `<html>`. The NgRx version stored the theme but never applied it.
+- The store has its own spec.
+
+Reach for a state library when state outgrows a few signals in a service: server data with loading and error states, or
+many features reading and changing the same records.
+
 ## What is inside
 
 - **App:** `apps/admin-portal`, standalone components, server-side rendering with prerendered routes, lazy-loaded
   dashboard.
-- **State:** NgRx Store with effects, router store and devtools; a facade service in front of the layout state.
+- **State:** a `LayoutStore` service built on Angular signals for the theme and the language.
 - **Routing:** login and home layouts, each with a functional guard ready for your auth check (both allow every user for
   now), and a 404 page.
-- **Translations:** Transloco, with the current language kept in the store.
+- **Translations:** Transloco, switched through the layout store.
 - **UI:** Tailwind CSS with a dark and light theme toggle.
 - **Tooling:** ESLint (flat config), Prettier, Jest, Playwright for end-to-end tests, Husky with commitlint and
   lint-staged.
