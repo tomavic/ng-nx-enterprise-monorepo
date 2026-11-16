@@ -12,12 +12,12 @@ import { selectTheme } from '../store/selectors';
 
 @Injectable({ providedIn: 'root' })
 export class LayoutFacadeService {
+  private store = inject<Store<AppStateInterface>>(Store);
+
   isLightTheme$ = this.store.pipe(select(selectTheme)).pipe(filter(v => v === 'light'));
   isDarkTheme$ = this.store.pipe(select(selectTheme)).pipe(filter(v => v === 'dark'));
 
   translocoService = inject(TranslocoService);
-
-  constructor(private store: Store<AppStateInterface>) {}
 
   setLightTheme() {
     this.store.dispatch(setLightTheme());
