@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100;
+}

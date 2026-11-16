@@ -1,5 +1,4 @@
-/* eslint-disable */
-export default {
+module.exports = {
   displayName: 'admin-portal',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
@@ -13,7 +12,8 @@ export default {
       }
     ]
   },
-  transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
+  // Transform .mjs files and `flat`, an ESM-only dependency of Transloco.
+  transformIgnorePatterns: ['node_modules/(?!(.*\\.mjs$|\\.pnpm/flat@|flat/))'],
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',

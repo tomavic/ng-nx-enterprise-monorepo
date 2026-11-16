@@ -1,20 +1,17 @@
-# Stage 0, for downloading project’s npm dependencies, building and compiling the app.
-
-# Angular v18 requires node:20+
-FROM node:latest AS node
-# Set the working directory
+# Stage 1: install dependencies with pnpm and build the app.
+FROM node:22-alpine AS build
 WORKDIR /app
-# copy file from the current directory to working directory
+# CI=true makes the prepare script skip installing git hooks inside the image.
+ENV CI=true
+RUN corepack enable
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 COPY . .
-# run npm install
-RUN npm install
-# copy file from the current directory to working directory
-# run build the application
-RUN npx nx reset && npx nx run admin-portal:build
+RUN pnpm nx build admin-portal --skip-nx-cache
 
-# Stage 1, for copying the compiled app from the previous step and making it ready for production with Nginx
+# Stage 2: serve the static browser build (prerendered pages + client app) with nginx.
 FROM nginx:alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=node /app/dist/apps/admin-portal .
-ENTRYPOINT ["ngnix", "-g", "daemon off;"]
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /app/dist/apps/admin-portal/browser /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

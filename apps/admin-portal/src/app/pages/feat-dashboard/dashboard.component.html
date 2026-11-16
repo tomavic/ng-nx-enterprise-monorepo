@@ -1,30 +1,32 @@
-<p>dashboard works!</p>
+<h1>Dashboard</h1>
 
-<h2>Switch Theme</h2>
-
-<button (click)="letThereBeLight()">Light Theme</button>
-<button (click)="letThereBeDark()">Dark Theme</button>
-
-<br />
-
-<hr />
-
-<h2>Translation i18n</h2>
+<h2>Theme</h2>
 <button
   type="button"
-  (click)="changeLanguage('en')"
+  [attr.aria-pressed]="layout.theme() === 'light'"
+  (click)="layout.setTheme('light')"
+  >Light</button
+>
+<button
+  type="button"
+  [attr.aria-pressed]="layout.theme() === 'dark'"
+  (click)="layout.setTheme('dark')"
+  >Dark</button
+>
+
+<h2>Language</h2>
+<button
+  type="button"
+  [attr.aria-pressed]="layout.language() === 'en'"
+  (click)="layout.setLanguage('en')"
   >English</button
 >
 <button
   type="button"
-  (click)="changeLanguage('de')"
+  lang="de"
+  [attr.aria-pressed]="layout.language() === 'de'"
+  (click)="layout.setLanguage('de')"
   >Deutsch</button
 >
 
-<ng-container *transloco="let t">
-  {{ t('helloWorld') }}
-</ng-container>
-
-<!-- <h3>{{ 'helloWorld' | transloco  }}</h3> -->
-
-<br />
+<p *transloco="let t">{{ t('helloWorld') }}</p>
